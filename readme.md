@@ -16,7 +16,7 @@ GOOGLE_KEY = Google GeoCoder Api Key goes here
 ```
 If you've made any changes to files rebuild the bundle.js file by running :
 ```
-webpack
+$ webpack
 ```
 Lastly start the server by running :
 ```
