@@ -2,6 +2,7 @@ var express = require('express');
 var axios = require('axios');
 var app = express();
 require('dotenv').config();
+const PORT = process.env.PORT || 3000;
 const GOOGLE_URL = 'https://maps.googleapis.com/maps/api/geocode/json?address=';
 const DARK_SKY_URL = 'https://api.darksky.net/forecast/';
 
@@ -27,6 +28,6 @@ router.get('/:hostName', function(req, res) {
 // all of our routes will be prefixed with /api
 app.use('/api', router);
 
-app.listen(3000, function(){
-  console.log("Express server is now running on port 3000");
+app.listen(PORT, function(){
+  console.log("Express server is now running on port" + PORT);
 });
