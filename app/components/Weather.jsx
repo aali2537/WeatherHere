@@ -27,12 +27,12 @@ var Weather = React.createClass({
           location: address,
           time: res.data.currently.time,
           data: res.data.daily,
-          isLoading: false
+
         });
       });
     }, (err) =>{
       this.setState({
-        isLoading: false
+
       });
       alert(err);
     });
@@ -43,7 +43,17 @@ var Weather = React.createClass({
 
     function renderResult(){
       if(isLoading){
-        return <Loading type='spinningBubbles' color='#000000' />;
+        return (
+          <div className="row">
+            <div className="row small-up-1">
+              <div className="column">
+                <center>
+                  <Loading type='spinningBubbles' color='#000000' />
+                </center>
+              </div>
+            </div>
+          </div>
+        );
       }else if(temp && location){
         return <WeatherResult temp={temp} location={location} time={time} daily={data}/>;
       }
