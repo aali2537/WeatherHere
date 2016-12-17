@@ -8,18 +8,14 @@ const DARK_SKY_URL = 'https://api.darksky.net/forecast/';
 app.use(express.static('public'));
 var router = express.Router();
 //Query api calls through server to avoid CORS policy violation
-router.get('/DarkSky', function(req, res) {
-  var requestUrl = DARK_SKY_URL + process.env.DARKSKY_KEY + "/" +  Object.getOwnPropertyNames(req.query)[0];
+router.get('/:hostName', function(req, res) {
+  var {hostName} = req.params;
 
-  axios.get(requestUrl).then(function(axiosRes){
-    res.json(axiosRes.data);
-  }, function(err){
-    res.json({status: "error"});
-  });
-});
-
-router.get('/GeoCode', function(req, res) {
-  var requestUrl = GOOGLE_URL + Object.getOwnPropertyNames(req.query)[0] + "&key=" + process.env.GOOGLE_KEY;
+  if(hostName === "DarkSky"){
+    var requestUrl = DARK_SKY_URL + process.env.DARKSKY_KEY + "/" +  Object.getOwnPropertyNames(req.query)[0];
+  }else{
+    var requestUrl = GOOGLE_URL + Object.getOwnPropertyNames(req.query)[0] + "&key=" + process.env.GOOGLE_KEY;
+  }
 
   axios.get(requestUrl).then(function(axiosRes){
     res.json(axiosRes.data);
