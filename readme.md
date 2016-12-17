@@ -4,7 +4,7 @@ WeatherHere is a single page React application that grabs weekly forecasts for w
 ## How To Run
 After cloning the repository grab all dependencies by running:
 ```
-npm install
+$ npm install
 ```
 The application is powered by the Dark Sky Weather api as well as Google's Geocoder api which can be found here:
 * [DarkSky](https://darksky.net/dev/register)
@@ -20,5 +20,5 @@ webpack
 ```
 Lastly start the server by running :
 ```
-node server.js
+$ node server.js
 ```
