@@ -3,9 +3,9 @@ var React = require('react');
 var WeatherPanel = (props) => {
   var {day,tempMin,tempMax,icon} = props;
   return (
-    <div>
-      <h3>{day}</h3>
-      <h3>{icon}</h3>
+    <div className="callout">
+      <h5>{day}</h5>
+      <h5>{icon}</h5>
       <p>{tempMin}°F - {tempMax}°F</p>
     </div>
   );

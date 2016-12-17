@@ -5,8 +5,9 @@ var Main = (props) => {
   return (
     <div>
       <Nav/>
-      <h2>Main Component with arrow</h2>
-      {props.children}
+      <div className="row">
+          {props.children}
+      </div>
     </div>
   );
 }

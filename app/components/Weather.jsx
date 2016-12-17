@@ -50,9 +50,14 @@ var Weather = React.createClass({
     };
     return (
       <div>
-        <h1>Get Weather</h1>
-        <WeatherForm onSearch={this.handleSearch}/>
-        {renderResult()}
+        <div className="row">
+          <div className="columns medium-6 large-4 small-centered text-center">
+            <h1>WeatherHere</h1>
+            <p>Weather at your fingertips</p>
+            <WeatherForm onSearch={this.handleSearch}/>
+          </div>
+        </div>
+            {renderResult()}
       </div>
     );
   }
