@@ -9,6 +9,7 @@ $ npm install
 The application is powered by the Dark Sky Weather api as well as Google's Geocoder api which can be found here:
 * [DarkSky](https://darksky.net/dev/register)
 * [Google Maps GeoCoding](https://developers.google.com/maps/documentation/geocoding/get-api-key)
+
 After obtaining both api keys create a file named .env in the root directory with the following contents:
 ```
 DARKSKY_KEY = Dark Sky api key goes here
