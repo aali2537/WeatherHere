@@ -45,6 +45,10 @@ module.exports = {
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
+      },
+      {
+        test: /\.svg$/,
+        loader: 'raw-loader'
       }
     ]
   },

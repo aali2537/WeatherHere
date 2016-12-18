@@ -27,12 +27,12 @@ var Weather = React.createClass({
           location: address,
           time: res.data.currently.time,
           data: res.data.daily,
-
+          isLoading: false
         });
       });
     }, (err) =>{
       this.setState({
-
+        isLoading: false
       });
       alert(err);
     });
