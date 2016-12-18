@@ -13,6 +13,9 @@ import cloudyNight from "./icons/Cloud-Moon.svg"
 
 var WeatherPanel = (props) => {
   var {day,tempMin,tempMax,icon} = props;
+  tempMin = Math.round(tempMin);
+  tempMax = Math.round(tempMax);
+
   var determineIcon = (icon) => {
     switch(icon){
       case "clear-day":
@@ -47,11 +50,13 @@ var WeatherPanel = (props) => {
         break;
     }
   }
+
   return (
     <div className="callout text-center">
       <h5>{day}</h5>
-      <SVGInline svg={determineIcon(icon)}/>
-      <p>{tempMin}°F - {tempMax}°F</p>
+      <SVGInline width="100%" height="100%" svg={determineIcon(icon)}/>
+      <p>{tempMax}°F</p>
+      <p>{tempMin}°F</p>
     </div>
   );
 }
