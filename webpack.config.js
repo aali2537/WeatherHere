@@ -32,7 +32,8 @@ module.exports = {
       WeatherPanel: 'app/components/WeatherPanel.jsx',
       DarkSky: 'app/api/DarkSky.jsx',
       GeoCoder: 'app/api/GeoCoder.jsx',
-      convertTime: 'app/utility/ConvertTime.js'
+      convertTime: 'app/utility/ConvertTime.js',
+      ErrorModal: 'app/components/ErrorModal.jsx'
     },
     extensions: ['','.js','.jsx']
   },
