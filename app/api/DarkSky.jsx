@@ -7,11 +7,11 @@ module.exports = {
     var requestUrl = `${DARK_SKY_URL}${location}`;
     return axios.get(requestUrl).then(function(res){
       if(res.data.status === "error"){
-        throw new Error(res.data.status);
+        throw new Error("Failed to get weather.");
       }
       return res;
     }, function(err){
-      throw new Error(res.data.message);
+      throw new Error("Failed to get weather.");
     });
   }
 };
