@@ -33,7 +33,8 @@ module.exports = {
       DarkSky: 'app/api/DarkSky.jsx',
       GeoCoder: 'app/api/GeoCoder.jsx',
       convertTime: 'app/utility/ConvertTime.js',
-      ErrorModal: 'app/components/ErrorModal.jsx'
+      ErrorModal: 'app/components/ErrorModal.jsx',
+      appStyle: 'app/styles/app.css'
     },
     extensions: ['','.js','.jsx']
   },

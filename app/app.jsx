@@ -12,6 +12,8 @@ $(document).ready(function() {
     $(document).foundation();
 });
 
+require('style!css!appStyle');
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
