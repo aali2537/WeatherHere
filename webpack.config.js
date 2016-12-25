@@ -51,6 +51,10 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: 'raw-loader'
+      },
+      {
+        loaders: ['style','css','sass'],
+        test: /\.scss?$/
       }
     ]
   },
