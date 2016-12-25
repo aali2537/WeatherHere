@@ -34,7 +34,7 @@ module.exports = {
       GeoCoder: 'app/api/GeoCoder.jsx',
       convertTime: 'app/utility/ConvertTime.js',
       ErrorModal: 'app/components/ErrorModal.jsx',
-      appStyle: 'app/styles/app.css'
+      appStyle: 'app/styles/app.scss'
     },
     extensions: ['','.js','.jsx']
   },
