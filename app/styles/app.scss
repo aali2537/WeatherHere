@@ -1,11 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$primary-font: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 $space-large: 3.0rem;
 $space-small: 1.0rem;
+$blue-color: #009ddc;
+$white-color: #f6f7f8;
+$orange-color: #f26430;
+
+.active {
+  color: $orange-color;
+  font-weight: bold;
+}
+
+
+.button.alert{
+  background-color: $orange-color;
+  font-family: $primary-font;
+}
+
+body {
+  background-color: $blue-color;
+}
+
+li,.top-bar {
+  background-color: $white-color;
+}
+
+p {
+  font-family: $primary-font;
+  color: #393e41;
+  margin-top: $space-small;
+  font-size: 1.1rem;
+}
+
+.menu-text,a{
+  font-family: $primary-font;
+  color: $blue-color;
+}
 
 .page-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: $primary-font;
+  color: $white-color;
   margin-top: $space-large;
 }
 
 .page-sub-title {
+  font-family: $primary-font;
+  color: $white-color;
   margin-bottom: $space-large;
 }
 
