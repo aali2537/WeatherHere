@@ -51,7 +51,7 @@ var Weather = React.createClass({
             <div className="row small-up-1">
               <div className="column">
                 <center>
-                  <Loading type='bars' color='#000000' />
+                  <Loading type='bars' color='#f6f7f8' />
                 </center>
               </div>
             </div>
