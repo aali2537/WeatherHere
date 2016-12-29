@@ -27,8 +27,10 @@ var WeatherResult = (props) => {
         <h3>{time}</h3>
         <h3>{temp}°F</h3>
       </div>
-      <div className="row small-up-2 medium-up-7">
-        {generatePanel()}
+      <div className="columns small-centered small-10 large-12">
+        <div className="row small-up-1 medium-up-7">
+          {generatePanel()}
+        </div>
       </div>
     </div>
   );
