@@ -6,12 +6,17 @@ $space-small: 1.0rem;
 $blue-color: #009ddc;
 $white-color: #f6f7f8;
 $orange-color: #f26430;
+$gray-color: #393e41;
 
 .active {
   color: $orange-color;
   font-weight: bold;
 }
 
+h2, h3, h5 {
+  font-family: $primary-font;
+  color: $gray-color;
+}
 
 .button.alert{
   background-color: $orange-color;
@@ -22,18 +27,18 @@ body {
   background-color: $blue-color;
 }
 
-li,.top-bar {
+li, .top-bar {
   background-color: $white-color;
 }
 
 p {
   font-family: $primary-font;
-  color: #393e41;
+  color: $gray-color;
   margin-top: $space-small;
   font-size: 1.1rem;
 }
 
-.menu-text,a{
+.menu-text, a {
   font-family: $primary-font;
   color: $blue-color;
 }
