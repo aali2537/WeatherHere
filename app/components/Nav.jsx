@@ -11,7 +11,7 @@ var Nav = (props) => {
       <div className ="top-bar" id="menu">
         <div className="top-bar-left">
           <ul className="dropdown vertical medium-horizontal menu">
-            <li className="menu-text">WeatherHere</li>
+            <li><IndexLink to="/">WeatherHere</IndexLink></li>
           </ul>
         </div>
         <div className="top-bar-right">
