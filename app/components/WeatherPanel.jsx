@@ -54,7 +54,7 @@ var WeatherPanel = (props) => {
   return (
     <div className="callout text-center">
       <h5>{day}</h5>
-      <SVGInline width="100%" height="100%" svg={determineIcon(icon)}/>
+      <SVGInline width="100%" height="100%" fill="#f26430" svg={determineIcon(icon)}/>
       <p>{tempMax}°F</p>
       <p>{tempMin}°F</p>
     </div>
