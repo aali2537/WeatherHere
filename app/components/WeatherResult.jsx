@@ -23,9 +23,9 @@ var WeatherResult = (props) => {
   return (
     <div>
       <div className="text-center">
-        <h2>{location}</h2>
-        <h3>{time}</h3>
-        <h3>{temp}°F</h3>
+        <h3>{location}</h3>
+        <h4>{time}</h4>
+        <h4>{temp}°F</h4>
       </div>
       <div className="columns small-centered small-10 large-12">
         <div className="row small-up-1 medium-up-7">
