@@ -13,10 +13,6 @@ $gray-color: #393e41;
   font-weight: bold;
 }
 
-.title-bar {
-  box-sizing: border-box;
-}
-
 .callout {
   background-color: $white-color;
   border-width: .2rem;
@@ -53,7 +49,7 @@ p {
 }
 
 .page-title {
-  font-size: 3.5rem;
+  font-size: 3.1rem;
   font-weight: 700;
   font-family: $primary-font;
   color: $white-color;
