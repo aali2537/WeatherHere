@@ -13,6 +13,10 @@ $gray-color: #393e41;
   font-weight: bold;
 }
 
+.title-bar {
+  box-sizing: border-box;
+}
+
 .callout {
   background-color: $white-color;
   border-width: .2rem;
