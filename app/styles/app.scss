@@ -13,6 +13,11 @@ $gray-color: #393e41;
   font-weight: bold;
 }
 
+.callout {
+  background-color: $white-color;
+  border-width: .2rem;
+}
+
 h2, h3, h5 {
   font-family: $primary-font;
   color: $gray-color;
