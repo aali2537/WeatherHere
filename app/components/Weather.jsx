@@ -51,7 +51,7 @@ var Weather = React.createClass({
             <Loading type='bars' color='#f6f7f8'/>
           </div>
         );
-      }else if (temp && location) {
+      }else if (data) {
         return <WeatherResult temp={temp} location={location} time={time} daily={data}/>;
       }
     };
