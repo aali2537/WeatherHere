@@ -12,6 +12,10 @@ $gray-color: #393e41;
   color: $orange-color;
 }
 
+.svgParent > div {
+  margin: 0 auto;
+}
+
 .callout {
   background-color: $white-color;
   border-width: .2rem;
