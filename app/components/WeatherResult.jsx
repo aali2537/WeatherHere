@@ -13,7 +13,7 @@ var WeatherResult = (props) => {
       var tempMin = currVal.temperatureMin;
       var tempMax = currVal.temperatureMax;
       return (
-        <div className="column">
+        <div key={"panel" + (index + 1)} className="column">
           <WeatherPanel day={day} icon={icon} tempMin={tempMin} tempMax={tempMax}/>
         </div>
       );
