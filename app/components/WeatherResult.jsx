@@ -5,7 +5,9 @@ var convertTime = require('convertTime');
 var WeatherResult = (props) => {
   var {temp,location,time,daily} = props;
   time = convertTime.convertFull(time);
-  daily.data.pop();
+  if(daily.data.length > 7){
+    daily.data.pop();
+  }
   function generatePanel(){
     return daily.data.map(function(currVal,index,arr){
       var day = convertTime.getDay(currVal.time);
