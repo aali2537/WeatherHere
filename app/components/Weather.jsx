@@ -29,8 +29,8 @@ var Weather = React.createClass({
           temp: res.data.currently.temperature,
           location: address,
           time: res.data.currently.time,
-          data: res.data.daily,
-          isLoading: false
+          data: res.data.daily
+
         });
       });
     }, (err) => {
@@ -47,14 +47,8 @@ var Weather = React.createClass({
     function renderResult () {
       if (isLoading) {
         return (
-          <div className="row">
-            <div className="row small-up-1">
-              <div className="column">
-                <center>
-                  <Loading type='bars' color='#f6f7f8' />
-                </center>
-              </div>
-            </div>
+          <div className="svgParent">
+            <Loading type='bars' color='#f6f7f8'/>
           </div>
         );
       }else if (temp && location) {
