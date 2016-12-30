@@ -29,8 +29,8 @@ var Weather = React.createClass({
           temp: res.data.currently.temperature,
           location: address,
           time: res.data.currently.time,
-          data: res.data.daily
-
+          data: res.data.daily,
+          isLoading: false
         });
       });
     }, (err) => {
