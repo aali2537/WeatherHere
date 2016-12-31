@@ -16,9 +16,14 @@ $gray-color: #393e41;
   margin: 0 auto;
 }
 
+.input-group {
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12), 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
 .callout {
   background-color: $white-color;
-  border-width: .2rem;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 h2, h3, h4, h5 {
@@ -37,6 +42,13 @@ body {
 
 li, .top-bar {
   background-color: $white-color;
+}
+
+#errorButton {
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12), 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+.top-bar, .title-bar{
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12), 0px 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 p {
