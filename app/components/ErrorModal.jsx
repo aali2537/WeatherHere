@@ -18,7 +18,7 @@ var ErrorModal = React.createClass({
 
     var modalMarkup =  (
       <div className="reveal tiny text-center" id="error-modal" data-reveal="">
-        <h4>{title}</h4>
+        <h4 id="error-title">{title}</h4>
         <p>{message}</p>
         <p>
           <button id="errorButton" className="alert button" data-close="">
